@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Widget dark Facebook cover</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;family=Instrument+Sans:wght@400..700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#FF7A45}a:hover{color:#FF9C70}
+</style>
+</helmet>
+<div style="width: 1640px; height: 624px; position: relative; overflow: hidden; background: #0D0F14; color: #F5F2EC; font-family: 'Instrument Sans', sans-serif">
+
+  <div style="position: absolute; left: 300px; top: 96px; width: 680px; display: flex; flex-direction: column; gap: 28px">
+    <div style="display: flex; align-items: center; gap: 16px">
+      <svg viewBox="-2 4 96 100" width="40" height="42" aria-hidden="true"><rect x="4" y="24" width="36" height="36" rx="8" fill="#F5F2EC"></rect><rect x="4" y="64" width="36" height="36" rx="8" fill="#F5F2EC"></rect><rect x="44" y="64" width="36" height="36" rx="8" fill="#F5F2EC"></rect><rect x="52" y="8" width="36" height="36" rx="8" fill="{{accent}}"></rect></svg>
+      <div style="width: 1px; height: 38px; background: #3A3F4B"></div>
+      <div style="display: flex; flex-direction: column; gap: 2px">
+        <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 30px; line-height: 1; letter-spacing: -0.01em">widget</span>
+        <span style="font-weight: 600; font-size: 9px; letter-spacing: 0.32em; text-transform: uppercase; color: {{accent}}; padding-left: 2px">Consulting</span>
+      </div>
+    </div>
+    <div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 66px; line-height: 1.02; letter-spacing: -0.02em">We build the pieces your business runs on.</div>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 16px; color: #A4A9B4">web · mobile · data · custom software · cloud · consulting</div>
+  </div>
+
+  <div style="position: absolute; left: 1040px; top: 150px; width: 324px; height: 324px">
+    <div style="position: absolute; left: 0px; top: 0px; width: 96px; height: 96px; border-radius: 20px; background: #1E222B"></div>
+    <div style="position: absolute; left: 114px; top: 0px; width: 96px; height: 96px; border-radius: 20px; background: #1E222B"></div>
+    <div style="position: absolute; left: 228px; top: 0px; width: 96px; height: 96px; border-radius: 20px; border: 2px dashed #3A3F4B; box-sizing: border-box"></div>
+    <div style="position: absolute; left: 0px; top: 114px; width: 96px; height: 96px; border-radius: 20px; background: #F5F2EC"></div>
+    <div style="position: absolute; left: 114px; top: 114px; width: 96px; height: 96px; border-radius: 20px; background: #1E222B"></div>
+    <div style="position: absolute; left: 228px; top: 114px; width: 96px; height: 96px; border-radius: 20px; background: #F5F2EC"></div>
+    <div style="position: absolute; left: 0px; top: 228px; width: 96px; height: 96px; border-radius: 20px; background: #F5F2EC"></div>
+    <div style="position: absolute; left: 114px; top: 228px; width: 96px; height: 96px; border-radius: 20px; background: #F5F2EC"></div>
+    <div style="position: absolute; left: 228px; top: 228px; width: 96px; height: 96px; border-radius: 20px; background: #1E222B"></div>
+    <div style="position: absolute; left: 250px; top: -44px; width: 96px; height: 96px; border-radius: 20px; background: {{accent}}; transform: rotate(8deg); box-shadow: 0 0 40px rgba(255,91,31,0.35)"></div>
+  </div>
+
+  <div style="position: absolute; left: 0px; bottom: 0px; width: 1640px; height: 4px; background: {{accent}}"></div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#FF5B1F","options":["#FF5B1F","#FF7A1A","#F04E23","#FFB020"]},"$preview":{"width":1640,"height":624}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#FF5B1F' };
+  }
+}
+</script>
+</body>
+</html>

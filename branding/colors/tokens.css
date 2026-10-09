@@ -1,0 +1,13 @@
+/* Widget Consulting brand tokens */
+:root {
+  --widget-orange: #FF5B1F;
+  --widget-ember: #C2410C;
+  --widget-ink: #12141C;
+  --widget-paper: #F5F2EC;
+  --widget-stone: #DCD6CB;
+  --widget-graphite: #565B66;
+  --widget-night: #0C0E12;
+  --widget-font-display: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
+  --widget-font-body: 'Instrument Sans', 'Segoe UI', system-ui, sans-serif;
+  --widget-font-mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+}

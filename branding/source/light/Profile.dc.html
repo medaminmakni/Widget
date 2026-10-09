@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Widget profile picture</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0}
+a{color:#12141C}a:hover{color:#000000}
+</style>
+</helmet>
+<div style="width: 720px; height: 720px; background: {{bg}}; display: flex; align-items: center; justify-content: center">
+  <svg viewBox="-2 4 96 100" width="336" height="350" role="img" aria-label="Widget symbol">
+    <rect x="4" y="24" width="36" height="36" rx="8" fill="#12141C"></rect>
+    <rect x="4" y="64" width="36" height="36" rx="8" fill="#12141C"></rect>
+    <rect x="44" y="64" width="36" height="36" rx="8" fill="#12141C"></rect>
+    <rect x="52" y="8" width="36" height="36" rx="8" fill="#F5F2EC"></rect>
+  </svg>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"bg":{"editor":"color","default":"#FF5B1F","options":["#FF5B1F","#FF7A1A","#F04E23","#FFB020"]},"$preview":{"width":720,"height":720}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { bg: this.props.bg ?? '#FF5B1F' };
+  }
+}
+</script>
+</body>
+</html>

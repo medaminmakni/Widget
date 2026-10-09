@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Widget website home</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;family=Instrument+Sans:wght@400..700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0D0F14}
+a{color:#F5F2EC;text-decoration:none}a:hover{color:#FF7A45}
+</style>
+</helmet>
+<div style="width: 100%; min-height: 100vh; background: #0D0F14; color: #F5F2EC; font-family: 'Instrument Sans', sans-serif">
+
+  <header style="border-bottom: 1px solid #2A2E38">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+      <a href="#top" style="display: flex; align-items: center; gap: 10px">
+        <svg viewBox="-2 4 96 100" width="30" height="31" aria-hidden="true"><rect x="4" y="24" width="36" height="36" rx="8" fill="#F5F2EC"></rect><rect x="4" y="64" width="36" height="36" rx="8" fill="#F5F2EC"></rect><rect x="44" y="64" width="36" height="36" rx="8" fill="#F5F2EC"></rect><rect x="52" y="8" width="36" height="36" rx="8" fill="{{accent}}"></rect></svg>
+        <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.01em">widget</span>
+      </a>
+      <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px">
+        <a href="#services">Services</a>
+        <a href="#offers">Offers</a>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#contact" style="background: {{accent}}; color: #0D0F14; font-weight: 600; padding: 12px 18px; border-radius: 10px">Book a free audit</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="top" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 72px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+    <div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase; color: {{accent}}">Software studio · Sfax → worldwide</div>
+      <h1 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 64px; line-height: 1.02; letter-spacing: -0.02em">We build the pieces your business runs on.</h1>
+      <p style="margin: 0; font-size: 19px; line-height: 1.6; color: #A4A9B4; max-width: 560px">Web platforms, mobile apps, dashboards and custom software, designed and built by one team, for clients in Tunisia, Europe and beyond.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 8px">
+        <a href="#contact" style="background: {{accent}}; color: #0D0F14; font-weight: 600; font-size: 16px; padding: 16px 22px; border-radius: 12px">Book a free 30-min audit →</a>
+        <a href="#work" style="border: 1px solid #3A3F4B; font-weight: 600; font-size: 16px; padding: 16px 22px; border-radius: 12px">See our work</a>
+      </div>
+    </div>
+    <div style="flex: 1 1 320px; display: flex; justify-content: center">
+      <div style="position: relative; width: 324px; height: 324px">
+        <div style="position: absolute; left: 0px; top: 0px; width: 96px; height: 96px; border-radius: 20px; background: #1E222B"></div>
+        <div style="position: absolute; left: 114px; top: 0px; width: 96px; height: 96px; border-radius: 20px; background: #1E222B"></div>
+        <div style="position: absolute; left: 228px; top: 0px; width: 96px; height: 96px; border-radius: 20px; border: 2px dashed #3A3F4B; box-sizing: border-box"></div>
+        <div style="position: absolute; left: 0px; top: 114px; width: 96px; height: 96px; border-radius: 20px; background: #F5F2EC"></div>
+        <div style="position: absolute; left: 114px; top: 114px; width: 96px; height: 96px; border-radius: 20px; background: #1E222B"></div>
+        <div style="position: absolute; left: 228px; top: 114px; width: 96px; height: 96px; border-radius: 20px; background: #F5F2EC"></div>
+        <div style="position: absolute; left: 0px; top: 228px; width: 96px; height: 96px; border-radius: 20px; background: #F5F2EC"></div>
+        <div style="position: absolute; left: 114px; top: 228px; width: 96px; height: 96px; border-radius: 20px; background: #F5F2EC"></div>
+        <div style="position: absolute; left: 228px; top: 228px; width: 96px; height: 96px; border-radius: 20px; background: #1E222B"></div>
+        <div style="position: absolute; left: 248px; top: -40px; width: 96px; height: 96px; border-radius: 20px; background: {{accent}}; transform: rotate(8deg); box-shadow: 0 20px 40px rgba(0,0,0,0.5)"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" style="border-top: 1px solid #2A2E38">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 36px">
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #A4A9B4">Services</div>
+        <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 40px; letter-spacing: -0.02em">Everything your business runs on, built by one team</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px">
+        <div style="background: #171A21; border: 1px solid #2A2E38; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: {{accent}}">01</span><b style="font-size: 20px">Web platforms</b><span style="font-size: 15px; line-height: 1.55; color: #A4A9B4">Business websites, client portals and web apps that load fast and are easy to update.</span></div>
+        <div style="background: #171A21; border: 1px solid #2A2E38; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: {{accent}}">02</span><b style="font-size: 20px">Mobile apps</b><span style="font-size: 15px; line-height: 1.55; color: #A4A9B4">iOS and Android apps for your customers or your field teams.</span></div>
+        <div style="background: #171A21; border: 1px solid #2A2E38; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: {{accent}}">03</span><b style="font-size: 20px">Data &amp; dashboards</b><span style="font-size: 15px; line-height: 1.55; color: #A4A9B4">Your numbers in one live dashboard instead of ten spreadsheets.</span></div>
+        <div style="background: #171A21; border: 1px solid #2A2E38; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: {{accent}}">04</span><b style="font-size: 20px">Custom software &amp; ERP</b><span style="font-size: 15px; line-height: 1.55; color: #A4A9B4">Tools shaped around how your company actually works.</span></div>
+        <div style="background: #171A21; border: 1px solid #2A2E38; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: {{accent}}">05</span><b style="font-size: 20px">Cloud &amp; integration</b><span style="font-size: 15px; line-height: 1.55; color: #A4A9B4">Hosting, migrations and connecting the tools you already use.</span></div>
+        <div style="background: #171A21; border: 1px solid #2A2E38; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: {{accent}}">06</span><b style="font-size: 20px">IT consulting</b><span style="font-size: 15px; line-height: 1.55; color: #A4A9B4">Audits and roadmaps before you spend on the wrong tool.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="offers" style="background: #12151B; border-top: 1px solid #2A2E38">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 36px">
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #A4A9B4">Fixed-scope offers</div>
+        <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 40px; letter-spacing: -0.02em">Clear scope. Clear price. Clear deadline.</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px">
+        <div style="background: #171A21; border: 1px solid #2A2E38; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px"><b style="font-size: 22px">Website in 3 weeks</b><span style="font-size: 15px; line-height: 1.55; color: #A4A9B4">Design, build and launch of your business website.</span><span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 28px; font-weight: 700">[YOUR PRICE]</span></div>
+        <div style="background: #171A21; border: 2px solid {{accent}}; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px"><b style="font-size: 22px">Dashboard sprint</b><span style="font-size: 15px; line-height: 1.55; color: #A4A9B4">Your data in one live dashboard in 2 weeks.</span><span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 28px; font-weight: 700">[YOUR PRICE]</span></div>
+        <div style="background: #171A21; border: 1px solid #2A2E38; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px"><b style="font-size: 22px">MVP in 8 weeks</b><span style="font-size: 15px; line-height: 1.55; color: #A4A9B4">A first working version of your web or mobile product.</span><span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 28px; font-weight: 700">[YOUR PRICE]</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" style="border-top: 1px solid #2A2E38">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 36px">
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #A4A9B4">Selected work</div>
+        <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 40px; letter-spacing: -0.02em">Real projects, real results</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px">
+        <div style="background: #171A21; border: 1px solid #2A2E38; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column"><div style="height: 190px; background: #1E222B; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #A4A9B4">[Project screenshot]</div><div style="padding: 22px; display: flex; flex-direction: column; gap: 8px"><b style="font-size: 19px">[Project name]</b><span style="font-size: 15px; color: #A4A9B4">[Client type] · [Result in one line]</span></div></div>
+        <div style="background: #171A21; border: 1px solid #2A2E38; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column"><div style="height: 190px; background: #1E222B; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #A4A9B4">[Project screenshot]</div><div style="padding: 22px; display: flex; flex-direction: column; gap: 8px"><b style="font-size: 19px">[Project name]</b><span style="font-size: 15px; color: #A4A9B4">[Client type] · [Result in one line]</span></div></div>
+        <div style="background: #171A21; border: 1px solid #2A2E38; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column"><div style="height: 190px; background: #1E222B; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #A4A9B4">[Project screenshot]</div><div style="padding: 22px; display: flex; flex-direction: column; gap: 8px"><b style="font-size: 19px">[Project name]</b><span style="font-size: 15px; color: #A4A9B4">[Client type] · [Result in one line]</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" style="background: #12151B; border-top: 1px solid #2A2E38">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 36px">
+      <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 40px; letter-spacing: -0.02em">How a project runs</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
+        <div style="border-top: 2px solid {{accent}}; padding-top: 18px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: {{accent}}">Step 1</span><b style="font-size: 19px">Free audit call</b><span style="font-size: 15px; line-height: 1.55; color: #A4A9B4">30 minutes to understand your need.</span></div>
+        <div style="border-top: 2px solid #3A3F4B; padding-top: 18px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #A4A9B4">Step 2</span><b style="font-size: 19px">Fixed proposal</b><span style="font-size: 15px; line-height: 1.55; color: #A4A9B4">Scope, price and deadline in writing.</span></div>
+        <div style="border-top: 2px solid #3A3F4B; padding-top: 18px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #A4A9B4">Step 3</span><b style="font-size: 19px">Build in sprints</b><span style="font-size: 15px; line-height: 1.55; color: #A4A9B4">A demo you can click every week.</span></div>
+        <div style="border-top: 2px solid #3A3F4B; padding-top: 18px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #A4A9B4">Step 4</span><b style="font-size: 19px">Launch &amp; support</b><span style="font-size: 15px; line-height: 1.55; color: #A4A9B4">We stay after go-live to keep it running.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="border-top: 1px solid #2A2E38">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 28px">
+      <div style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+        <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 44px; letter-spacing: -0.02em">Tell us what you need built.</h2>
+        <span style="font-size: 17px; color: #A4A9B4">We reply within one working day, in French, English or Arabic.</span>
+      </div>
+      <a href="#contact" style="background: {{accent}}; color: #0D0F14; font-weight: 600; font-size: 17px; padding: 18px 26px; border-radius: 12px">Book a free audit →</a>
+    </div>
+  </section>
+
+  <footer style="border-top: 1px solid #2A2E38">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 14px; color: #A4A9B4">
+      <span>Widget Consulting · Sfax, Tunisia</span>
+      <span>[contact@yourdomain] · [+216 phone / WhatsApp]</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#FF5B1F","options":["#FF5B1F","#FF7A1A","#F04E23","#FFB020"]},"$preview":{"width":1440,"height":1720}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#FF5B1F' };
+  }
+}
+</script>
+</body>
+</html>
