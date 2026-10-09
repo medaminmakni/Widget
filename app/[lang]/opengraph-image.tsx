@@ -6,8 +6,9 @@ export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
 /** Social preview image (Facebook, LinkedIn, WhatsApp) generated at build time for each language. */
-export default function OpengraphImage({ params }: { params: { lang: string } }) {
-  const t = getDictionary(params.lang);
+export default async function OpengraphImage({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+  const t = getDictionary(lang);
   const tile = (x: number, y: number, color: string, rotate = 0) => (
     <div
       style={{

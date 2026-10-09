@@ -1,12 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
 import type { Dict } from '@/lib/i18n';
 
 type Key = 'web' | 'app' | 'data' | 'erp' | 'cloud' | 'advice';
 const order: Key[] = ['web', 'app', 'data', 'erp', 'cloud', 'advice'];
 
-const icons: Record<Key, JSX.Element> = {
+const icons: Record<Key, ReactNode> = {
   web: (<><rect x="3" y="4" width="18" height="14" rx="2" /><path d="M3 8h18M8 21h8" /></>),
   app: (<><rect x="7" y="2.5" width="10" height="19" rx="2.5" /><path d="M11 18.5h2" /></>),
   data: <path d="M4 20V10M10 20V4M16 20v-7M22 20H2" />,

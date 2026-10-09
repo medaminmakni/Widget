@@ -1,22 +1,24 @@
+import type { ReactNode } from 'react';
 import type { Metadata, Viewport } from 'next';
 import { notFound } from 'next/navigation';
 import '../globals.css';
 import { getDictionary, isLocale, locales, siteUrl } from '@/lib/i18n';
 
-type Props = { children: React.ReactNode; params: { lang: string } };
+type Props = { children: ReactNode; params: Promise<{ lang: string }> };
 
 export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
 }
 
-export function generateMetadata({ params }: { params: { lang: string } }): Metadata {
-  const t = getDictionary(params.lang);
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const t = getDictionary(lang);
   return {
     metadataBase: new URL(siteUrl),
     title: t.meta.title,
     description: t.meta.description,
     alternates: {
-      canonical: `/${params.lang}`,
+      canonical: `/${lang}`,
       languages: { fr: '/fr', en: '/en', 'x-default': '/fr' },
     },
     openGraph: {
@@ -24,8 +26,8 @@ export function generateMetadata({ params }: { params: { lang: string } }): Meta
       siteName: 'Widget Consulting',
       title: t.meta.title,
       description: t.meta.description,
-      locale: params.lang === 'fr' ? 'fr_FR' : 'en_US',
-      url: `/${params.lang}`,
+      locale: lang === 'fr' ? 'fr_FR' : 'en_US',
+      url: `/${lang}`,
     },
     twitter: { card: 'summary_large_image', title: t.meta.title, description: t.meta.description },
   };
@@ -52,10 +54,11 @@ const jsonLd = {
   url: siteUrl,
 };
 
-export default function LangLayout({ children, params }: Props) {
-  if (!isLocale(params.lang)) notFound();
+export default async function LangLayout({ children, params }: Props) {
+  const { lang } = await params;
+  if (!isLocale(lang)) notFound();
   return (
-    <html lang={params.lang}>
+    <html lang={lang}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

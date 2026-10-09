@@ -12,7 +12,8 @@ function pickLocale(req: NextRequest): string {
   return 'en';
 }
 
-export function middleware(req: NextRequest) {
+/** Sends visitors from "/" (or any path without a language) to /fr or /en. */
+export function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl;
   const hasLocale = locales.some((l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`));
   if (hasLocale) return NextResponse.next();

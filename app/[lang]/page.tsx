@@ -11,9 +11,10 @@ import Contact from '@/components/Contact';
 import Effects from '@/components/Effects';
 import { notFound } from 'next/navigation';
 
-export default function Home({ params }: { params: { lang: string } }) {
-  if (!isLocale(params.lang)) notFound();
-  const lang = params.lang as Locale;
+export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang: raw } = await params;
+  if (!isLocale(raw)) notFound();
+  const lang = raw as Locale;
   const t = getDictionary(lang);
 
   return (

@@ -2,7 +2,7 @@
 
 Website and brand kit of **Widget Consulting**, software studio in Sfax.
 
-Next.js 14 (App Router) + TypeScript + three.js. French and English.
+Next.js 16 (App Router) + React 19 + TypeScript + three.js. French and English.
 
 ## Run it
 
@@ -17,7 +17,7 @@ npm run build      # production build
 npm start          # serve the production build
 ```
 
-Requires Node.js 18.18 or newer.
+Requires Node.js 20.9 or newer.
 
 ## Where things are
 
@@ -31,7 +31,7 @@ Requires Node.js 18.18 or newer.
 | 3D hero | `components/HeroScene.tsx` |
 | Project builder | `components/Builder.tsx` |
 | Contact form + e-mail sending | `components/Contact.tsx`, `app/api/contact/route.ts` |
-| Language redirect (`/` → `/fr` or `/en`) | `middleware.ts` |
+| Language redirect (`/` → `/fr` or `/en`) | `proxy.ts` |
 | Sitemap, robots | `app/sitemap.ts`, `app/robots.ts` |
 | Brand kit (logos, colors, social images) | `branding/` |
 

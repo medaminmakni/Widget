@@ -4,4 +4,6 @@ out
 .env
 .env.local
 *.log
+upgrade-log.txt
 .DS_Store
+upgrade.bat
